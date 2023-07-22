@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/48d6c73121.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+
+      <nav>
+        <img src="images/logo1-removebg-preview.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">My Skills</a></li>
+          <li><a href="#portfolio">My Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Frontend Web Developer</p>
+        <h1>Hi, I'm <span>Charishma</span><br> from India</h1>
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/me3.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            I am a punctual and motivated individual who is
+            able to work in a busy environment and produce high
+            standards of work. I am an excellent team worker
+            and am able to take instructions from all levels
+            and build up good working relationships with all
+            colleagues. I am flexible, reliable and possess
+            excellent time keeping skills.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+          </div>
+         
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Travelling Website</span><br>Using Full Stack Development</li>
+            </ul>
+          </div>
+          <div class="tab-contents active-tab" id="education">
+            <ul>
+              <li><span>Bachelor Of Technology</span><br>At LBRCE</li>
+              <li><span>Intermediate</span><br>Sri Chaitanya Jr College</li>
+              <li><span>SSC</span><br>Sri Chaitanya School</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+  <!--<div id="services">
+   <div class="container">
+    <h1 class="sub-title">My Skills</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2><br>
+        <p>“Quiz Application” is a collection of different types of questions through
+           which user can gain knowledge.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+       
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>Mobile Application</h2><br>
+        <p>It's wonderful to travel—to meet new people, see new places, experience different cultures, live life the way life is lived somewhere else.In this website people can book BUS, CAR, TRAIN, AEROPLANE etc from source to destination and how many places they are going to visit.</p>
+           <a href="#">Learn more</a>
+      </div>
+      <div>
+       
+        <i class="fa-sharp fa-regular fa-pen-clip"></i>
+        <h2>Data Analyisation using Tableau</h2><br>
+        <p>Tableau is an end-to-end data analytics platform that allows you to prep,
+           analyze, collaborate, and share your big data insights.</p>
+           <a href="#">Learn more</a>
+      </div>
+
+
+    </div>
+   </div>
+  </div>
+-->
+
+<div id="services">
+  <div class="container">
+   <h1 class="sub-title">My Skills</h1>
+   <div class="services-list">
+     <div>
+       <i class="fa-solid fa-code"></i>
+       <h2>Frontend Web Development</h2><br>
+       <p>Create websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app</p>
+      
+     </div>
+     <div>
+       
+       <i class="fas fa-project-diagram"></i>
+       <h2>Project Management</h2><br>
+       <p>I am good in organizing and coordinating tasks, setting deadlines, and working collaboratively with teams.</p>
+
+     </div>
+     
+     <div>
+       
+<i class="fa-solid fa-keyboard"></i>
+       <h2>Programming languages</h2><br>
+       <p>Java(Intermediate)<br>Python(Intermediate)<br>C(Intermediate)</p>
+          
+     </div>
+
+   </div>
+  </div>
+ </div>
+  
+
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        
+          <div class="container1">
+            <img src="images/img_nature_wide.jpg" alt="Nature" style="width:100%;">
+            <div class="text-block">
+              <h4>Nature</h4>
+              <p>It's wonderful to travel—to meet new people, see new places, experience different cultures, live life the way life is lived somewhere else.In this website people can book BUS, CAR, TRAIN, AEROPLANE etc from source to destination and how many places they are going to visit.</p>
+            </div>
+          </div>
+        
+
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="images/333.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/ccc.jpeg" alt="Snow" style="width:100%" height="189px" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/dd.jpeg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/bg.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        </div>
+      </div>
+      
+      <div class="container2">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+      
+      <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+      </script>
+
+    </div>
+
+
+
+  </div>
+  <div id="contact">
+    <div class="container">
+     <div class="row">
+       <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>contact@gmail.com</p>
+        <p> <i class="fas fa-phone-square-alt"></i>0123456789</p>
+        <div class="social-icons">
+          <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-twitter-square"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+       </div>
+       <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your name" required>
+          <input type="email" name="Email" placeholder="Your email" required>
+          <textarea name="Message" rows="6" placeholder="Your message" ></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+       </div>
+    </div>
+    </div>
+    <div class="copyright"><i class="fas fa-heart"></i>Have passion towards your work<i class="fas fa-heart"></i></div>
+  </div>
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+</body>
+
+</html>
